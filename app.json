@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "MediReminder",
+    "slug": "medireminder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/branding/medireminder-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/branding/medireminder-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#808080"
+    },
+    "ios": {
+      "bundleIdentifier": "com.medireminder.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.medireminder.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/branding/medireminder-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#808080",
+          "image": "./assets/branding/medireminder-icon.png",
+          "imageWidth": 240,
+          "resizeMode": "contain"
+        }
+      ]
+    ]
+  }
+}
