@@ -1,4 +1,4 @@
-import { toHourMinute } from './dateTimeHelpers';
+import { toHourMinute, toTimeString, parseHourMinute } from './dateTimeHelpers';
 
 export function generateOnceDaily(startDate) {
   return [startDate];
@@ -18,6 +18,10 @@ export function generateEverySixHours(startDate) {
   return times;
 }
 
+export function generateCustom(customTimes) {
+  return customTimes;
+}
+
 export function buildSchedule({ frequency, startDate, firstTime, secondTime, customTimes }) {
   switch (frequency) {
     case 'once_daily':
@@ -26,7 +30,13 @@ export function buildSchedule({ frequency, startDate, firstTime, secondTime, cus
       return generateTwiceDaily(firstTime, secondTime);
     case 'every_6_hours':
       return generateEverySixHours(startDate);
+    case 'custom':
+      return generateCustom(customTimes);
     default:
       return [toHourMinute(startDate)];
   }
+}
+
+export function previewTimes(times) {
+  return times.map((t) => toTimeString(parseHourMinute(t)));
 }
