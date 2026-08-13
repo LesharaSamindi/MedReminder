@@ -194,13 +194,40 @@ Because there is no persistent database, state created during use may reset when
 
 ## Screenshots
 
-The `screenshots/` directory is prepared for submission images. Add the following files to display them here:
+<table>
+  <tr>
+    <td align="center">
+      <strong>Login</strong><br />
+      <img src="screenshots/login.png" alt="MediReminder prototype login screen" width="300" />
+    </td>
+    <td align="center">
+      <strong>Home dashboard</strong><br />
+      <img src="screenshots/home-dashboard.png" alt="MediReminder Home dashboard with progress and next reminder" width="300" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Home medicine list</strong><br />
+      <img src="screenshots/home-medicine-list.png" alt="MediReminder Home screen showing the complete local medicine list" width="300" />
+    </td>
+    <td align="center">
+      <strong>Settings</strong><br />
+      <img src="screenshots/settings.png" alt="MediReminder notification and preference settings" width="300" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Add Medicine — once daily</strong><br />
+      <img src="screenshots/add-medicine-once-daily.png" alt="Add Medicine form configured for a once-daily reminder" width="300" />
+    </td>
+    <td align="center">
+      <strong>Add Medicine — twice daily</strong><br />
+      <img src="screenshots/add-medicine-twice-daily.png" alt="Add Medicine form with two daily reminder times and schedule preview" width="300" />
+    </td>
+  </tr>
+</table>
 
-- `screenshots/login.png`
-- `screenshots/home.png`
-- `screenshots/medicine-detail.png`
-- `screenshots/add-medicine.png`
-- `screenshots/settings.png`
+These captures cover Login, Home, Add Medicine, and Settings. A Medicine Detail capture can be added separately for a complete screen set.
 
 ## Sprint 1 requirement mapping
 
